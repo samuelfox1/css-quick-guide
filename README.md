@@ -3,9 +3,19 @@
 
 # Table of Contents
 1. [CSS Anatomy](#css-anatomy)
-2. [Selectors](#selectors)
-3. [Selector Specificity](#selector-specificity)
-4. [Selector Chaining](#selector-chaining)
+0. [Selectors](#selectors)
+0. - [Type](#type)
+0. - [Class](#class)
+0. - [Id](#id)
+0. - [Attrobute](#attribute)
+0. - [Pseudo-class](#pseudo-class)
+0. - [Multiple Selectors](#multiple-selectors)
+0. [Selector Chaining](#selector-chaining)
+0. [Descendant Combinator](#descendant-combinator)
+0. [Selector Specificity](#selector-specificity)
+0. [](#)
+0. [](#)
+0. [](#)
 
 
 
@@ -85,9 +95,37 @@
 >  background-color: lime;
 >}
 >```
->
->### Descendant
->- 
+>### Multiple Selectors
+>- apply declarations to multible selectors.
+>- selectors seperated with a comma 
+>```
+>p, h1 {
+>    font-family: Georgia;
+>}
+>```
+>---
+
+
+## Selector Chaining
+>- Combining multiple selectors to increase specificity
+>- Target all p elements with the class of bold
+>```
+>p.bold {
+>    background-color: yellow;
+>}
+>``` 
+>---
+
+## Descendant Combinator
+>- Selecting elements that are nested within other HTML elements, also known as descendants.
+>```
+><ul class='main-list'>
+>  <li> one </li>
+>  <li> two </li>
+>  <li> three </li>
+></ul>
+>```
+>- select all li decendants of the element with a class name of main-list 
 >```
 >.class-name li {
 >    color: red;
@@ -102,9 +140,10 @@
 >
 >| - | selector |  overrides |
 >|---|---|---|
->| 1 | id | class & type |
->| 2 | class | type |
->| 3 | type | - |
+>| 1 | chaining | id, class, type |
+>| 2 | id | class, type |
+>| 3 | class | type |
+>| 4 | type | - |
 
-## Selector Chaining
+#### [Back to the top ^ ](#css-quick-guide)
 
