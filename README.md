@@ -85,8 +85,8 @@
 >```
 >
 >### Pseudo-class
->- Alternatative styling based of user user interaction
->- Make background color lime when a user hovers over all p elements
+>- Apply styling based on user interaction.
+>- Make background color lime when user hovers over all p elements.
 >```
 >p:hover {
 >  background-color: lime;
