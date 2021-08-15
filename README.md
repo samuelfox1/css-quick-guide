@@ -9,14 +9,11 @@
 0. - [Id](#id)
 0. - [Attrobute](#attribute)
 0. - [Pseudo-class](#pseudo-class)
-0. - [Multiple Selectors](#multiple-selectors)
 0. [Selector Chaining](#selector-chaining)
 0. [Descendant Combinator](#descendant-combinator)
+0. [Multiple Selectors](#multiple-selectors)
 0. [Selector Specificity](#selector-specificity)
-0. [](#)
-0. [](#)
-0. [](#)
-
+<!-- 0. [](#) -->
 
 
 ## CSS Anatomy
@@ -95,14 +92,6 @@
 >  background-color: lime;
 >}
 >```
->### Multiple Selectors
->- apply declarations to multible selectors.
->- selectors seperated with a comma 
->```
->p, h1 {
->    font-family: Georgia;
->}
->```
 >---
 
 
@@ -127,12 +116,21 @@
 >```
 >- select all li decendants of the element with a class name of main-list 
 >```
->.class-name li {
+>.main-list li {
 >    color: red;
 >}
 >```
 > ---
 
+## Multiple Selectors
+>- apply declarations to multible selectors.
+>- selectors seperated with a comma 
+>```
+>p, h1 {
+>    font-family: Georgia;
+>}
+>```
+>---
 
 ## Selector Specificity
 >- Specificity is the order by which the browser decides which CSS >styles will be displayed. A best practice in CSS is to style >elements while using the lowest degree of specificity so that if an >element needs a new style, it is easy to override.
@@ -144,6 +142,6 @@
 >| 2 | id | class, type |
 >| 3 | class | type |
 >| 4 | type | - |
+>---
 
 #### [Back to the top ^ ](#css-quick-guide)
-
