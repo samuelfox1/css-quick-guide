@@ -16,7 +16,7 @@ Use the CLI tool to:
 
 [selectors](./md/selectors.md#selectors)
 
-[selector-chaining](./md/selector-chaining#selector-chaining)
+[selector-chaining](./md/selector-chaining.md#selector-chaining)
 
 [descendant-combinator](./md/descendant-combinator.md#descendant-combinator)
 
